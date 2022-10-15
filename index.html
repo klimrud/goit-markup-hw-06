@@ -498,6 +498,29 @@
             </li>
           </ul>
         </div>
+        <div class="footer-subscription">
+          <p class="footer-subscription-text">Підпишіться на розсилку</p>
+          <input
+            type="text"
+            name="name"
+            id="subscription"
+            placeholder="E-mail"
+            class="footer-subscription-input"
+          />
+
+          <div class="subscription-btn">
+            <button type="button" class="footer-subscription-btn">
+              Підписатися
+            </button>
+            <svg class="icon-subscriptio icon-icon-send">
+              <use
+                href="./images/symbol-defs.svg#icon-icon-send"
+                width="24"
+                height="24"
+              ></use>
+            </svg>
+          </div>
+        </div>
       </div>
     </footer>
 
@@ -520,6 +543,7 @@
 
               <svg class="icon icon-person-bl-1">
                 <use
+                  class="icon-person"
                   href="./images/symbol-defs.svg#icon-person-bl-1"
                   width="18"
                   height="18"
@@ -604,20 +628,6 @@
     </div>
 
     <!-- form -->
-
-    <!-- <script>
-      ;(() => {
-        document
-          .querySelector('.js-speaker-form')
-          .addEventListener('submit', (e) => {
-            e.preventDefault()
-
-            new FormData(e.currentTarget).forEach((value, name) =>
-              console.log(`${name}: ${value}`),
-            )
-          })
-      })()
-    </script> -->
 
     <script src="./js/modal.js"></script>
   </body>
