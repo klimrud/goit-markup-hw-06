@@ -498,28 +498,27 @@
             </li>
           </ul>
         </div>
-        <div class="footer-subscription">
+        <div class="subscription-block">
           <p class="footer-subscription-text">Підпишіться на розсилку</p>
-          <input
-            type="text"
-            name="name"
-            id="subscription"
-            placeholder="E-mail"
-            class="footer-subscription-input"
-          />
-
-          <div class="subscription-btn">
+          <form class="footer-subscription">
+            <input
+              type="text"
+              name="name"
+              id="subscription"
+              placeholder="E-mail"
+              class="footer-subscription-input"
+            />
             <button type="button" class="footer-subscription-btn">
               Підписатися
+              <svg class="icon-subscriptio icon-icon-send">
+                <use
+                  href="./images/symbol-defs.svg#icon-icon-send"
+                  width="24"
+                  height="24"
+                ></use>
+              </svg>
             </button>
-            <svg class="icon-subscriptio icon-icon-send">
-              <use
-                href="./images/symbol-defs.svg#icon-icon-send"
-                width="24"
-                height="24"
-              ></use>
-            </svg>
-          </div>
+          </form>
         </div>
       </div>
     </footer>
@@ -599,23 +598,18 @@
             </div>
           </div>
           <div class="form-checkbox">
-            <input
-              type="checkbox"
-              name=""
-              id="policy"
-              class="form-input-checkbox"
-            />
             <label for="policy" class="checkbox-text">
+              <input
+                type="checkbox"
+                name=""
+                id="policy"
+                class="form-input-checkbox"
+              />
+              <span class="icon-checkbox"></span>
+
               Погоджуюся з розсилкою та приймаю
               <span class="checkbox-deck">Умови договору</span>
             </label>
-            <svg class="icon-checkbox icon-icon-check">
-              <use
-                href="./images/symbol-defs.svg#icon-icon-check"
-                width="16"
-                height="15"
-              ></use>
-            </svg>
           </div>
           <button type="submit" class="form-btn">Відправити</button>
         </form>

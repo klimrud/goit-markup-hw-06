@@ -316,28 +316,27 @@
             </li>
           </ul>
         </div>
-        <div class="footer-subscription">
+        <div class="subscription-block">
           <p class="footer-subscription-text">Підпишіться на розсилку</p>
-          <input
-            type="text"
-            name="name"
-            id="subscription"
-            placeholder="E-mail"
-            class="footer-subscription-input"
-          />
-
-          <div class="subscription-btn">
+          <form class="footer-subscription">
+            <input
+              type="text"
+              name="name"
+              id="subscription"
+              placeholder="E-mail"
+              class="footer-subscription-input"
+            />
             <button type="button" class="footer-subscription-btn">
               Підписатися
+              <svg class="icon-subscriptio icon-icon-send">
+                <use
+                  href="./images/symbol-defs.svg#icon-icon-send"
+                  width="24"
+                  height="24"
+                ></use>
+              </svg>
             </button>
-            <svg class="icon-subscriptio icon-icon-send">
-              <use
-                href="./images/symbol-defs.svg#icon-icon-send"
-                width="24"
-                height="24"
-              ></use>
-            </svg>
-          </div>
+          </form>
         </div>
       </div>
     </footer>
